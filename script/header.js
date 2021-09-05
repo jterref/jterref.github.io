@@ -1,7 +1,7 @@
 document.getElementById("header").innerHTML =
     "<div id='heading'>"
     + "<a href='/'>"
-    + "    Scarf Dook"
+    + "Jay's Stash"
     + "</a>"
     + "</div>"
     + "<nav id='nav'>"
