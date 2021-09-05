@@ -98,6 +98,7 @@
   }
   #download_button{display: none !important;}
   .contact_wrapper{max-width: 90% !important;}
+  .contact_logo{height:4rem !important; border-radius: 1.2rem !important;}
   .contact_link {font-size: 1.1rem !important;}
 }
 
@@ -254,6 +255,8 @@ select{margin-top: 1%}
 .contact_logo{
   height:5rem;
   margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
   border-radius: 1.5rem;
 }
 .contact_link {
