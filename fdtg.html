@@ -1,0 +1,84 @@
+﻿<html>
+    <head>
+        <title>Scarf Dook - FDTG</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0, width=device-width">
+        <script src="script/fdtg.js"></script>
+        <link rel="icon" type="image/png" href="img/icon2.png">
+        <link rel="stylesheet" type="text/css" href="style/default.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body class="fdtg">
+        <!-- Page -->
+        <div class="grid grid-template-areas">
+            <div id="left"></div>
+            <div id="right"></div>
+            <header id="header">
+                <script src="script/header.js"></script>
+            </header>
+            <!-- Drawing -->
+            <div id="drawing">
+                <img src = "img/Jay Terref.png">
+            </div>
+            <!-- Main Content -->
+            <main id="content">
+                <h1>Furry Drawing Theme Generator</h3>
+
+                <div>
+                    This is a generator of themes for furry drawings. The main objective is to challenge you in new ways and give you ideas to start 
+                    a drawing while letting you add your own elements. Some combinations might require you to be very creative but try to find a way 
+                    to incorporate every single detail in your drawing and, most importantly, <b>have fun!</b><br /><br />
+                    Choose how many main characters should be in the drawing and how many props. Complex themes allow more challenging options.<br />
+
+                <!-- Choices -->
+                <br />
+                <div class="fdtg_container">
+                    <div class="fdtg_choices">
+                        Number of<br />characters:
+                        <br />
+                        <select id = "nspecies">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    
+                    <div class="fdtg_choices">
+                        Number of<br />props:
+                        <br />
+                        <select id = "nprops">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>                             
+                </div>
+                <!-- Buttons -->
+                <div class="fdtg_container">
+                    <button	id="simple" title="Easy themes"
+                            onclick="simple()">
+                            Give me a<br />simple theme!
+                    </button>
+
+                    <button	id="complex" title="Challenging themes"
+                            onclick="complex()">
+                            Give me a<br />complex theme!
+                    </button>
+                </div>
+
+                
+                <!-- Result box -->
+                <div id="resultins">
+                    <scan id="results" style="text-align:justify;text-justify:inter-word;"></scan>
+                    </div>
+                </div>
+                <!-- Download theme-->
+                <button id="download_button">
+                        <i class="fa fa-download"></i>
+                        <a id="download_link" download="Theme" href=””>Download theme</a>
+                </button>
+
+            </main>
+        </div>
+    </body>
+</html>

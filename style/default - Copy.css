@@ -1,0 +1,228 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan|Merriweather|Noticia+Text|Roboto+Slab');
+
+/* Background */
+.doodle {
+  position: fixed;
+  z-index: -1;
+}
+
+.home{
+  background-image: url("../img/bg.png");
+  background-repeat: repeat;
+}
+.gallery{
+  background-image: url("../img/bgg.png");
+  background-repeat: repeat;
+}
+.fdtg{
+  background-image: url("../img/bgf.png");
+  background-repeat: repeat;
+}
+.contact{
+  background-image: url("../img/bgc.png");
+  background-repeat: repeat;
+}
+
+/* Page Grid */
+.grid {
+  display: grid;
+}
+
+.left {grid-area: left;}
+.header {grid-area: header;}
+.content {grid-area: content;}
+.drawing {grid-area: drawing;}
+.right {grid-area: right;}
+.footer {grid-area: footer;}
+
+/* Desktop Display*/
+.grid-template-areas {
+  grid-template-columns: auto minmax(550px, 800px) 500px auto;
+	grid-template-areas:
+		"left header . right"
+		"left content drawing right";
+}
+
+/* Mobile Display */
+@media only screen and (max-width: 1100px) and (min-width: 811px){
+  .grid-template-areas {
+    grid-template-columns: auto 800px auto;
+    grid-template-areas:
+      "left header right"
+      "left content right"
+      "left drawing right";
+  }
+  .content{height: auto !important;}
+}
+@media only screen and (max-width: 810px){
+  .grid-template-areas {
+    grid-template-columns: minmax(500px, 800px);
+    grid-template-areas:
+      "header"
+      "content"
+      "drawing";
+  }
+  .title{font-size: 78px !important;}
+  li{font-size: 26px !important;}
+  .content{height: auto !important; font-size: 14px !important;}
+  .contact_link {
+    padding-left: 30px !important;
+    width: 350px !important;
+    font-size: 18px !important;
+  }
+}
+/* Page Elements*/
+
+a {color: #38254F; text-decoration: none;}
+h3 {text-align:center;}
+
+/* Header */
+.header {
+  height: 150px;
+}
+
+.title {
+  height: 100px;
+  width: auto;
+  text-align: center;
+  font-family: 'Baloo Chettan', cursive;
+  font-size: 90px;
+}
+.nav {
+  height: 50px;
+  width: auto;
+}
+
+.nav a:hover {color: #3399cc;}
+
+ul {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+li {
+  margin: 0 10px;
+  font: 30px 'Baloo Chettan', cursive;
+  display: inline-block;
+}
+
+/* Content */
+.content {
+  height: 700px;
+  background: linear-gradient(#FFEDD1, #ffd799);
+  padding: 15px 30px;
+  text-align:justify;
+  text-justify:inter-word;
+  font-family: 'Roboto Slab', serif;
+  color: #38254F;
+  border-radius: 0.75rem;
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.content { box-shadow: 10px 10px 3px 1px #e0e0e0;}
+
+/* Drawing */
+.drawing {
+  height: 700px;
+  margin: auto;
+}
+.drawing > img{width: 500px;}
+
+
+/* Gallery */
+.stash {
+  padding: 10px;
+  border-radius: 0.75rem;
+  background:hsla(32, 15%, 100%,.5);
+  height: 600px;
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#stash_inner{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 100%;
+  padding-right: 5px; 
+  overflow-x: auto;
+  }
+#stash_inner > a{
+  margin: 10px;
+}
+#stash_inner img{
+  border-radius: 0.75rem;
+}
+#stash_inner  img:hover{
+transform: scale(1.1);
+box-shadow: 5px 5px 2px 1px #505050;
+}
+
+/* FDTG */
+.fdtg_container {
+  display: flex;
+  justify-content: center;
+}
+.fdtg_choices{
+  border: 5px;
+  border-radius: 0.75rem;
+  padding: 5px 5px;
+  background:hsla(32, 15%, 100%,.5);
+  width: 160px;
+  margin:15px;
+  text-align:center;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif
+}
+button{
+  border: none;
+  border-radius: 0.75rem;
+  margin: 15px;
+  width: 200px;
+  padding: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 18px;
+  color: #38254F;
+  font-family: Arial, Helvetica, sans-serif
+}
+#simple{background-color: #FFFF99;}
+#simple:hover{background-color: #FFFFFF}
+#complex{background-color: #3399CC;}
+#complex:hover{background-color: #FFFFFF}
+.resultins{
+  border-radius: 0.75rem;
+  padding: 15px;
+  background:hsla(32, 15%, 100%,.5);
+  height: 120px;
+  margin: auto;
+}
+
+/*Contact*/
+.contact_wrapper{
+  display: flex;
+  border-radius: 0.75rem;
+  background:hsla(32, 15%, 100%,.5);
+  padding: 5px 5px 5px 10px;
+  width: 400px;
+  height: 100px;
+  margin: 5px auto
+}
+.contact_link {
+  padding-left: 50px;
+  width: 500px;
+  line-height: 100px;
+  height: 100px;
+  font-size: 18px
+}
+/* Footer */
+.footer {
+  height: auto;
+  margin: 5px;
+  background: cornsilk;
+}
