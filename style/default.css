@@ -98,7 +98,7 @@
   }
   #download_button{display: none !important;}
   .contact_wrapper{max-width: 95% !important;}
-  .contact_logo{height:4rem !important; border-radius: 1.2rem !important;}
+  .contact_logo{height:3rem !important; border-radius: 0.9rem !important;}
   .contact_link {font-size: 1.1rem !important;}
 }
 
