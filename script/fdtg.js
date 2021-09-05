@@ -180,7 +180,7 @@ function speciesdetermination(){
                     return value != species2[randspecies2]  
                 });
                 randspecies3 = Math.floor(Math.random() * species3.length);
-                randspecies = species[randspecies1] + ", " + species2[randspecies2] + " and " + 
+                randspecies = species[randspecies1] + ", " + species2[randspecies2] + ", and " + 
                                 species3[randspecies3];
             }
     }
@@ -216,7 +216,7 @@ function themedetermination(){
                     return value != prof_pool2[randprofession2]  
                 });
             randprofession3 = Math.floor(Math.random() * prof_pool3.length);
-            randprofession = prof_pool[randprofession1] + ", " + prof_pool2[randprofession2] + " and " + 
+            randprofession = prof_pool[randprofession1] + ", " + prof_pool2[randprofession2] + ", and " + 
                                 prof_pool3[randprofession3];
     }
 }
@@ -247,7 +247,7 @@ function propdetermination() {
                     return value != props_pool2[randprops2]  
                 });
             randprops3 = Math.floor(Math.random() * props_pool3.length);
-            randprops = props_pool[randprops1] + ", " + props_pool2[randprops2] + " and " + props_pool3[randprops3];
+            randprops = props_pool[randprops1] + ", " + props_pool2[randprops2] + ", and " + props_pool3[randprops3];
     }
 }
 
